@@ -46,7 +46,6 @@ const actionCreators = {
             })
             .catch(err => {
                 console.log(err);
-                console.log("mio");
                 dispatch({
                     type:actionsTypes.UPDATE_REPOS,
                     payload: {
@@ -74,7 +73,6 @@ const actionCreators = {
     },
     selectRepo: (id)  => (dispatch, getState) => {
         const repos  = getState.repos;
-        console.log("rep", repos);
         if (repos) {
             const selectedRepo = repos.find(repo => {
             return repo.id === id

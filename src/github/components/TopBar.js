@@ -6,8 +6,6 @@ import { connect } from 'react-redux'
 import actionCreators from '../../redux/actions'
 
 const TopBar = ({ user, updateUser, updateRepos }) => {
-  //console.log(updateRepos());
-  //console.log(updateUser());
   const updateAll = () => {
     updateUser()
     updateRepos()
